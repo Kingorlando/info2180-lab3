@@ -90,14 +90,18 @@ h1 span {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor:pointer;
 }
 
 .square.X {
   color: var(--lighterBlue);
+  content:'x';
+  font-size:200px;
 }
 
 .square.O {
   color: var(--coral);
+  
 }
 
 .hover {
@@ -129,4 +133,9 @@ h1 span {
   background-color: var(--lightBlue);
   border: 1px solid var(--lightBlue);
   cursor: pointer;
+}
+
+.x::before{
+  content:'x';
+  font-size=250px;
 }
