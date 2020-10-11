@@ -95,8 +95,7 @@ h1 span {
 
 .square.X {
   color: var(--lighterBlue);
-  content:'x';
-  font-size:200px;
+  
 }
 
 .square.O {
@@ -135,7 +134,3 @@ h1 span {
   cursor: pointer;
 }
 
-.x::before{
-  content:'x';
-  font-size=250px;
-}
