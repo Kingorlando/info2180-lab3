@@ -1,8 +1,22 @@
 window.onload=function(){
      let xrow1=[0,1,2];
    let xIsNext=true;
+   let winner=0;
    scard=[];
    let squares=document.querySelectorAll('#board div');
+    let reset=document.querySelector('button');
+     reset.addEventListener('click',function(){
+     document.getElementById("status").innerHTML="Move your mouse over a square and click to play an X or an O.";
+     document.getElementById("status").classList.remove('you-won');
+     for (const square of squares){
+       squares.classList.add('X');
+       squares.classList.add('O');
+     }
+    
+     });
+
+
+      console.log(squares.length);
    for(let i=0;i<squares.length;i++){
    squares[i].classList.add('square');
 
@@ -13,7 +27,8 @@ window.onload=function(){
    squares[i].addEventListener('click',function(){
      console.log('Square ' + i + ' clicked');    
      
-      if (xIsNext){
+      
+       if (xIsNext){
        squares[i].classList.add('X');
        let playerx=squares[i].innerHTML='X';
        
@@ -30,10 +45,11 @@ window.onload=function(){
        console.log(scard);
        scard+=',';
       }
-      
+     
       if (squares[0].innerHTML=='X' && squares[0].innerHTML==squares[1].innerHTML && squares[1].innerHTML==squares[2].innerHTML ){
         document.getElementById("status").innerHTML="Congratulations! X is the Winner!";
         document.getElementById("status").classList.add('you-won');
+       
       }else if (squares[0].innerHTML=='O' && squares[0].innerHTML==squares[1].innerHTML && squares[1].innerHTML==squares[2].innerHTML){
         document.getElementById("status").innerHTML="Congratulations! O is the Winner!";
         document.getElementById("status").classList.add('you-won');
@@ -80,8 +96,8 @@ window.onload=function(){
         document.getElementById("status").innerHTML="Congratulations! O is the Winner!";
         document.getElementById("status").classList.add('you-won');
 
+      
       }
-
 
 
 
