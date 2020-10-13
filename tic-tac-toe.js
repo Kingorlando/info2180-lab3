@@ -32,37 +32,53 @@ window.onload=function(){
       }
       
       if (squares[0].innerHTML=='X' && squares[0].innerHTML==squares[1].innerHTML && squares[1].innerHTML==squares[2].innerHTML ){
-        document.getElementById("status").innerHTML="x wins";
+        document.getElementById("status").innerHTML="Congratulations! X is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[0].innerHTML=='O' && squares[0].innerHTML==squares[1].innerHTML && squares[1].innerHTML==squares[2].innerHTML){
-        document.getElementById("status").innerHTML="o wins";
+        document.getElementById("status").innerHTML="Congratulations! O is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[3].innerHTML=='X' && squares[3].innerHTML==squares[4].innerHTML && squares[4].innerHTML==squares[5].innerHTML ){
-        document.getElementById("status").innerHTML="x wins";
+        document.getElementById("status").innerHTML="Congratulations! X is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[3].innerHTML=='O' && squares[3].innerHTML==squares[4].innerHTML && squares[4].innerHTML==squares[5].innerHTML){
-        document.getElementById("status").innerHTML="o wins";
+        document.getElementById("status").innerHTML="Congratulations! O is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[6].innerHTML=='X' && squares[6].innerHTML==squares[7].innerHTML && squares[7].innerHTML==squares[8].innerHTML ){
-        document.getElementById("status").innerHTML="x wins";
+        document.getElementById("status").innerHTML="Congratulations! X is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[6].innerHTML=='O' && squares[6].innerHTML==squares[7].innerHTML && squares[7].innerHTML==squares[8].innerHTML){
-        document.getElementById("status").innerHTML="o wins";
+        document.getElementById("status").innerHTML="Congratulations! O is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[0].innerHTML=='X' && squares[0].innerHTML==squares[3].innerHTML && squares[3].innerHTML==squares[6].innerHTML ){
-        document.getElementById("status").innerHTML="x wins";
+        document.getElementById("status").innerHTML="Congratulations! X is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[0].innerHTML=='O' && squares[0].innerHTML==squares[3].innerHTML && squares[3].innerHTML==squares[6].innerHTML){
-        document.getElementById("status").innerHTML="o wins";
+        document.getElementById("status").innerHTML="Congratulations! O is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[1].innerHTML=='X' && squares[1].innerHTML==squares[4].innerHTML && squares[4].innerHTML==squares[7].innerHTML ){
-        document.getElementById("status").innerHTML="x wins";
+        document.getElementById("status").innerHTML="Congratulations! X is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[1].innerHTML=='O' && squares[1].innerHTML==squares[4].innerHTML && squares[4].innerHTML==squares[7].innerHTML){
-        document.getElementById("status").innerHTML="o wins";
+        document.getElementById("status").innerHTML="Congratulations! O is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[2].innerHTML=='X' && squares[2].innerHTML==squares[5].innerHTML && squares[5].innerHTML==squares[8].innerHTML ){
-        document.getElementById("status").innerHTML="x wins";
+        document.getElementById("status").innerHTML="Congratulations! X is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[2].innerHTML=='O' && squares[2].innerHTML==squares[5].innerHTML && squares[5].innerHTML==squares[8].innerHTML){
-        document.getElementById("status").innerHTML="o wins";
+        document.getElementById("status").innerHTML="Congratulations! O is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[0].innerHTML=='X' && squares[0].innerHTML==squares[4].innerHTML && squares[4].innerHTML==squares[8].innerHTML ){
-        document.getElementById("status").innerHTML="x wins";
+        document.getElementById("status").innerHTML="Congratulations! X is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[0].innerHTML=='O' && squares[0].innerHTML==squares[4].innerHTML && squares[4].innerHTML==squares[8].innerHTML){
-        document.getElementById("status").innerHTML="o wins";
+        document.getElementById("status").innerHTML="Congratulations! O is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[2].innerHTML=='X' && squares[2].innerHTML==squares[4].innerHTML && squares[4].innerHTML==squares[6].innerHTML ){
-        document.getElementById("status").innerHTML="x wins";
+        document.getElementById("status").innerHTML="Congratulations! X is the Winner!";
+        document.getElementById("status").classList.add('you-won');
       }else if (squares[2].innerHTML=='O' && squares[2].innerHTML==squares[4].innerHTML && squares[4].innerHTML==squares[6].innerHTML){
-        document.getElementById("status").innerHTML="o wins";
+        document.getElementById("status").innerHTML="Congratulations! O is the Winner!";
+        document.getElementById("status").classList.add('you-won');
 
       }
 
