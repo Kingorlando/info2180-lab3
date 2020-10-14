@@ -6,15 +6,16 @@ window.onload=function(){
    let squares=document.querySelectorAll('#board div');
     let reset=document.querySelector('button');
      reset.addEventListener('click',function(){
+      for(let r=0;r<squares.length;r++){
+       squares[r].innerHTML="";
+       squares[r].classList.remove('hover');
+      } 
      document.getElementById("status").innerHTML="Move your mouse over a square and click to play an X or an O.";
      document.getElementById("status").classList.remove('you-won');
-     for (const square of squares){
-       squares.classList.add('X');
-       squares.classList.add('O');
-     }
-    
-     });
-
+        
+     
+    });
+     
 
       console.log(squares.length);
    for(let i=0;i<squares.length;i++){
@@ -26,7 +27,7 @@ window.onload=function(){
 
    squares[i].addEventListener('click',function(){
      console.log('Square ' + i + ' clicked');    
-     
+     squares[i].classList.remove('hover');
       
        if (xIsNext){
        squares[i].classList.add('X');
@@ -106,8 +107,11 @@ window.onload=function(){
 
 
       
-        }); 
+   }); 
+     
    });
-  
+   
    }
+     
 }
+
